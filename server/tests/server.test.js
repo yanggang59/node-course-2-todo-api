@@ -22,7 +22,6 @@ beforeEach((done)=>{
 describe('POST /todos',()=>{
   it('should create a new todo',(done)=>{
     var text='test todo text';
-
     request(app)
       .post('/todos')
       .send({text})
